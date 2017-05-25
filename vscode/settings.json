@@ -1,0 +1,116 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.tabSize": 2,
+  "editor.mouseWheelZoom": true,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.minimap.enabled": true,
+  "editor.lineNumbers": "relative",
+  "workbench.statusBar.visible": true,
+  "workbench.colorTheme": "One Monokai 80s",
+  "workbench.iconTheme": "vscode-icons",
+  "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 0,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-b>": false,
+    "<C-t>": false
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "f",
+        "d"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.otherModesKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "leader",
+        "f",
+        "s"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "p",
+        "p"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.openRecent",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "p",
+        "f"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "Z",
+        "Z"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        },
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": ":nohl"
+        }
+      ]
+    }
+  ],
+  "files.associations": {
+    "*.tpl": "html"
+  },
+  "vsicons.projectDetection.disableDetect": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "extensions.autoUpdate": true
+}
