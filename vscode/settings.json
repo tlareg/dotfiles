@@ -13,6 +13,8 @@
   "workbench.iconTheme": "vscode-icons",
   "window.menuBarVisibility": "toggle",
   "window.zoomLevel": 0,
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "C:\\PROGRAMY\\Neovim\\bin\\nvim.exe",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -112,5 +114,7 @@
   "vsicons.projectDetection.disableDetect": true,
   "vsicons.dontShowNewVersionMessage": true,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-  "extensions.autoUpdate": true
+  "extensions.autoUpdate": true,
+  "vim.disableAnnoyingGcMessage": true,
+  "vim.disableAnnoyingNeovimMessage": true
 }
