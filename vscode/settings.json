@@ -9,8 +9,8 @@
   "editor.minimap.enabled": true,
   "editor.lineNumbers": "relative",
   "workbench.statusBar.visible": true,
-  "workbench.colorTheme": "One Monokai 80s",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Material Theme Palenight",
+  "workbench.iconTheme": "material-icon-theme",
   "window.menuBarVisibility": "toggle",
   "window.zoomLevel": 0,
   "vim.enableNeovim": true,
@@ -90,6 +90,20 @@
           "command": "workbench.action.files.save",
           "args": []
         },
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "b",
+        "d"
+      ],
+      "after": [],
+      "commands": [
         {
           "command": "workbench.action.closeActiveEditor",
           "args": []
