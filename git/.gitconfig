@@ -1,12 +1,24 @@
+[push]
+	default = current
+[pull]
+	default = current
 [alias]
 	st = status
+  s = status -s
+  conflicts = diff --name-only --diff-filter=U
+  a = add -A
+  unstage = reset HEAD --
+  undo-commit = reset --soft HEAD~1
 	ci = commit
+  cm = commit -m
+  wip = commit -m "WIP"
+  cane = commit --amend --no-edit
 	co = checkout
+  rd = pull --rebase origin develop
 	br = branch
-	unstage = reset HEAD --
 	last = log -1 HEAD
-	lg = log -10 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	conflicts = diff --name-only --diff-filter=U
-	s = status -s
-	cm = commit -m
-	a = add -A
+  lg = log -15 --graph --abbrev-commit --decorate --pretty=format:'%C(auto)|%h|%C(reset) %C(bold blue)%<(15)[%ar]%C(reset) %C(bold green)%<(18)<%an>%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset)'
+  lga = log --all -15 --graph --abbrev-commit --decorate --pretty=format:'%C(auto)|%h|%C(reset) %C(bold blue)[%ar]%C(reset) %C(bold green)<%an>%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset)'
+  lg2 = log -15 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg3 = log -15 --all --decorate --oneline --graph
+  la = "!git config -l | grep alias | cut -c 7-"
