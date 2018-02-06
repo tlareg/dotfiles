@@ -24,12 +24,14 @@
   "vim.hlsearch": true,
   "vim.leader": "<space>",
   "vim.handleKeys": {
+    "<C-r>": true,
     "<C-b>": false,
+    "<C-f>": false,
     "<C-t>": false,
     "<C-c>": false,
     "<C-v>": false,
     "<C-x>": false,
-    "<C-f>": false
+    "<C-d>": false
   },
   "vim.insertModeKeyBindings": [
     {
