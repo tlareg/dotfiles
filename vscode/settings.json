@@ -1,22 +1,18 @@
-// Place your settings in this file to overwrite the default settings
 {
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.mouseWheelZoom": true,
   "editor.rulers": [
     80,
     120
   ],
   "editor.minimap.enabled": true,
-  "editor.lineNumbers": "relative",
-  "editor.lineHeight": 16,
-  "workbench.activityBar.visible": false,
+  "editor.lineNumbers": "on",
+  "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
-  "workbench.colorTheme": "Monokai One Dark Vivid",
+  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "vscode-icons",
-  "window.menuBarVisibility": "toggle",
+  "window.menuBarVisibility": "default",
   "window.zoomLevel": 0,
-  "vim.enableNeovim": true,
-  "vim.neovimPath": "C:\\PROGRAMY\\Neovim\\bin\\nvim.exe",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -44,11 +40,24 @@
       ]
     }
   ],
-  "vim.otherModesKeyBindingsNonRecursive": [
+  "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
         "leader",
         "f",
+        "s"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "leader",
         "s"
       ],
       "after": [],
@@ -128,6 +137,18 @@
           "command": ":nohl"
         }
       ]
+    },
+    {
+      "before": [
+        "leader",
+        "z"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.toggleZenMode"
+        }
+      ]
     }
   ],
   "files.associations": {
@@ -137,6 +158,23 @@
   "vsicons.dontShowNewVersionMessage": true,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "extensions.autoUpdate": true,
-  "vim.disableAnnoyingGcMessage": true,
-  "vim.disableAnnoyingNeovimMessage": true
+  "terminal.integrated.fontSize": 16,
+  "editor.detectIndentation": false,
+  "editor.autoIndent": false,
+  "editor.multiCursorModifier": "alt",
+  "trailing-spaces.trimOnSave": true,
+  "trailing-spaces.deleteModifiedLinesOnly": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+"sync.gist": "48014ba282c5e5ade8ad4337ba28f677",
+"sync.autoDownload": false,
+"sync.autoUpload": false,
+"sync.forceDownload": false,
+"sync.quietSync": false,
+  "sync.askGistName": false,
+  "editor.snippetSuggestions": "top",
+"sync.removeExtensions": true,
+"sync.syncExtensions": true,
+"breadcrumbs.enabled": true,
+"gitblame.infoMessageFormat": "${time.custom,YYYY-MM-DD} ${commit.summary} ${commit.hash}"
 }
