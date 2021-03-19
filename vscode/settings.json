@@ -1,18 +1,11 @@
+// Place your settings in this file to overwrite the default settings
 {
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "editor.mouseWheelZoom": true,
-  "editor.rulers": [
-    80,
-    120
-  ],
+  "editor.rulers": [80, 120],
   "editor.minimap.enabled": true,
   "editor.lineNumbers": "on",
   "workbench.activityBar.visible": true,
-  "workbench.statusBar.visible": true,
-  "workbench.colorTheme": "Dracula",
-  "workbench.iconTheme": "vscode-icons",
-  "window.menuBarVisibility": "default",
-  "window.zoomLevel": 0,
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -31,22 +24,13 @@
   },
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "f",
-        "d"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["f", "d"],
+      "after": ["<Esc>"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "leader",
-        "f",
-        "s"
-      ],
+      "before": ["leader", "f", "s"],
       "after": [],
       "commands": [
         {
@@ -56,10 +40,7 @@
       ]
     },
     {
-      "before": [
-        "leader",
-        "s"
-      ],
+      "before": ["leader", "s"],
       "after": [],
       "commands": [
         {
@@ -69,11 +50,7 @@
       ]
     },
     {
-      "before": [
-        "leader",
-        "p",
-        "p"
-      ],
+      "before": ["leader", "p", "p"],
       "after": [],
       "commands": [
         {
@@ -83,11 +60,7 @@
       ]
     },
     {
-      "before": [
-        "leader",
-        "p",
-        "f"
-      ],
+      "before": ["leader", "p", "f"],
       "after": [],
       "commands": [
         {
@@ -97,10 +70,7 @@
       ]
     },
     {
-      "before": [
-        "Z",
-        "Z"
-      ],
+      "before": ["Z", "Z"],
       "after": [],
       "commands": [
         {
@@ -114,11 +84,7 @@
       ]
     },
     {
-      "before": [
-        "leader",
-        "b",
-        "d"
-      ],
+      "before": ["leader", "b", "d"],
       "after": [],
       "commands": [
         {
@@ -128,9 +94,7 @@
       ]
     },
     {
-      "before": [
-        "<C-n>"
-      ],
+      "before": ["<C-n>"],
       "after": [],
       "commands": [
         {
@@ -139,10 +103,7 @@
       ]
     },
     {
-      "before": [
-        "leader",
-        "z"
-      ],
+      "before": ["leader", "z"],
       "after": [],
       "commands": [
         {
@@ -154,8 +115,6 @@
   "files.associations": {
     "*.tpl": "html"
   },
-  "vsicons.projectDetection.disableDetect": true,
-  "vsicons.dontShowNewVersionMessage": true,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "extensions.autoUpdate": true,
   "terminal.integrated.fontSize": 16,
@@ -166,15 +125,43 @@
   "trailing-spaces.deleteModifiedLinesOnly": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-"sync.gist": "48014ba282c5e5ade8ad4337ba28f677",
-"sync.autoDownload": false,
-"sync.autoUpload": false,
-"sync.forceDownload": false,
-"sync.quietSync": false,
+  "sync.gist": "48014ba282c5e5ade8ad4337ba28f677",
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.forceDownload": false,
+  "sync.quietSync": false,
   "sync.askGistName": false,
   "editor.snippetSuggestions": "top",
-"sync.removeExtensions": true,
-"sync.syncExtensions": true,
-"breadcrumbs.enabled": true,
-"gitblame.infoMessageFormat": "${time.custom,YYYY-MM-DD} ${commit.summary} ${commit.hash}"
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "breadcrumbs.enabled": true,
+  "gitblame.infoMessageFormat": "${time.custom,YYYY-MM-DD} ${commit.summary} ${commit.hash}",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "editor.renderWhitespace": "all",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[NGINX]": {},
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.colorTheme": "Dracula",
+  "extensions.ignoreRecommendations": false,
+  "vsicons.dontShowNewVersionMessage": true
 }
