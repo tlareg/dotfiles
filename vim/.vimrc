@@ -12,10 +12,6 @@ set smartcase         " Use case-sensitive search if there's a capital letter
 set incsearch         " Show search matches as you type
 set hlsearch          " Highlight search results
 
-syntax enable         " Enable syntax highlighting
-set background=dark   " Set the background color to dark
-colorscheme desert    " Use the desert color scheme
-
 
 " automatic plugins installation, see: https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -35,6 +31,8 @@ Plug 'tpope/vim-sensible'
 
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 
+Plug 'dracula/vim', { 'as': 'dracula' }
+
 " Initialize plugin system
 call plug#end()
 
@@ -42,3 +40,8 @@ call plug#end()
 " NERDTree settings
 autocmd vimenter * NERDTree   " Automatically open NERDTree on startup
 map <C-n> :NERDTreeToggle<CR> " Toggle NERDTree with Ctrl+n
+
+
+syntax enable         " Enable syntax highlighting
+set background=dark   " Set the background color to dark
+colorscheme dracula
