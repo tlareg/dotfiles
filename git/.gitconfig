@@ -14,6 +14,7 @@
   br = branch
   rd = pull --rebase origin develop
   rc = rebase --continue
+  cp = cherry-pick
   conflicts = diff --name-only --diff-filter=U
   unstage = reset HEAD --
   lg = log -5 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
