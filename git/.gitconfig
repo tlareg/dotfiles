@@ -10,6 +10,7 @@
   wip = commit -m 'WIP'
   cane = commit --amend --no-edit
   pushf = push --force-with-lease
+  po = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
   co = checkout
   br = branch
   rd = pull --rebase origin develop
